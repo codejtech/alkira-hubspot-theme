@@ -1,0 +1,23 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo-wrapper">
+      <a href="{{ site_settings.root_url }}" class="logo-link">
+        {% if theme.logo %}
+          <img src="{{ theme.logo.src }}" alt="{{ theme.logo.alt || 'Logo' }}" class="logo-img" />
+        {% else %}
+          <span class="logo-text">MySite</span>
+        {% endif %}
+      </a>
+    </div>
+
+    <nav class="main-nav" role="navigation">
+      {% menu "main_menu" id=theme.primary_menu overrideable=true %}
+    </nav>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,72 @@
+section.cr-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+section.cr-cards .cr-card {
+    max-width: 300px;
+    flex: 1 1 300px;
+}
+
+section.cr-cards .cr-card img {
+    width: 100%;
+}
+
+section.cr-cards .cr-card .cr-card__content {
+    padding: 10px;
+}
+
+section.cr-cards .cr-card .cr-card__content h3 {
+    margin: 0;
+}
+
+section.cr-cards .cr-card .cr-card__content p {
+    margin: 0;
+}
+
+section.cr-cards .cr-card .cr-card__content a {
+    display: block;
+    margin-top: 10px;
+}
+
+section.cr-cards .cr-card .cr-card__content a:hover {
+    text-decoration: underline;
+}
+
+section.cr-cards .cr-card .cr-card__content a:hover:before {
+    width: calc(100% + 30px);
+    bottom: 8px;
+}
+
+section.cr-cards .cr-card .cr-card__content a:hover:after {
+    right: -30px;
+}
+
+section.cr-cards .cr-card .cr-card__content a:before {
+    content: "";
+    width: calc(100% + 25px);
+    height: 2px;
+    background: #2B56F0;
+    position: absolute;
+    bottom: 5px;
+    -webkit-transition: 0.25s ease-in;
+    transition: 0.25s ease-in;
+}
+
+section.cr-cards .cr-card .cr-card__content a:after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    background-image: url("https://blog.greenlight.guru/hubfs/GG22_theme-files/button-assets/purpleArrow_sym.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 5px;
+    right: -25px;
+    width: 18px;
+    height: 14px;
+    -webkit-transition: 0.25s ease-in;
+    transition: 0.25s ease-in;
+}
